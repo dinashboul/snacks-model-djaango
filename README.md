@@ -25,4 +25,4 @@
 
 ### pip install django
 
-## PR 
+## PR https://github.com/dinashboul/snacks-model-djaango/pull/1
