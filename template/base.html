@@ -13,11 +13,13 @@
             <div class="navbar">
               <a href="{% url 'home' %}" class="active">Home</a>
               <a href="{% url 'snacks' %} "class="active">Snack</a>
-              
-      
+              <a href ="{% url 'blogs_list' %}" class="active"> Blogs</a>
+              <a  href="{% url 'about' %}  " class="active">About us</a>
             </div>
-          
+              
           </header>
+          
+            
     {% block content%}
     {% endblock content  %}
     

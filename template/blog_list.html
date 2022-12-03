@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content%}
+{% for  post in AllPosts  %}
+<div class="container">
+    <div class="card">
+        <h3> {{post.title}}</h3>
+        <img src={{post.img_url}} alt={{post.title}} style="width:50%">
+
+        <div class="data">
+            
+          <button class="button"><a href="{% url 'blogs_details' post.id%}">Details</a></button>
+              
+        </div>
+    </div>
+  </div>
+    
+    {% endfor %}
+    
+
+{% endblock content%}   
